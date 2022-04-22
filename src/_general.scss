@@ -1,0 +1,130 @@
+
+//Body
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: 1s;
+    background: var(--zero-body-bkg-color)
+}
+
+
+
+//Container
+.container {
+
+}
+ 
+  
+
+//Keyframes
+@-webkit-keyframes show {
+    0% {
+        opacity: 0;
+    }
+  
+    100% {
+        opacity: 1;
+    }
+}
+  
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+  
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+//Header
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author-image {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.author-link {
+    text-decoration: none;
+    opacity: .6;
+    color: var(--ten-text-color);
+    margin-left: 10px;
+    font-weight: 600;
+
+    &:hover {
+        opacity: 1;
+        color: var(--ten-text-color);
+    }
+}
+
+.nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    opacity: .6;
+    position: relative;
+    color: var(--first-text-color);
+    padding: 10px;
+    font-size: 13px;
+  
+    &:hover {
+      opacity: 1;
+      color: var(--first-text-color);
+    }
+  
+    &:before {
+      content: "";
+      width: 100%;
+      height: 5px;
+      background-color: var(--second-underline-nav-color);
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      bottom: 5px;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: left;
+      transform-origin: left;
+      -webkit-transition: .5s;
+      transition: .5s;
+    }
+  
+    &:hover:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      opacity: 1;
+    }
+}
+
+.switchButton {
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    background: var(--ten-text-color);
+    opacity: .1;
+    margin-left: 30px;
+    margin-top: 5px;
+
+    &.switchButton:hover {
+    opacity: 1;
+    -webkit-transition: .5s;
+    transition: .5s;
+    }
+}
+
+

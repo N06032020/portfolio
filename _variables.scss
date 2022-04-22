@@ -1,0 +1,28 @@
+
+//Variables  
+    body{
+        --zero-body-bkg-color: white;
+        --first-text-color: #636363;
+        --second-underline-nav-color: #ffd1dc;
+        --third-underline-about-color: #4285F4;
+        --fourth-underline-skills-color: #DB4437;
+        --fifth-underline-projects-color: #F4B400;
+        --sixth-underline-contacts-color: #b39eb5;
+        --seventh-contacts-icons-color: #e3dac9;
+        --eigth-underline-contact-color: #0F9D58;
+        --ten-text-color: black;  
+}
+
+//Dark theme 
+    body.dark-theme {
+        --zero-body-bkg-color: #343434;
+        --first-text-color: white;
+        --second-underline-nav-color: #ffd1dc;
+        --third-underline-about-color: #4285F4;
+        --fourth-underline-skills-color: #DB4437;
+        --fifth-underline-projects-color: #F4B400;
+        --sixth-underline-contacts-color: #b39eb5;
+        --seventh-contacts-icons-color: #e3dac9;
+        --eigth-underline-contact-color: #0F9D58;
+        --ten-text-color: white;    
+}  
