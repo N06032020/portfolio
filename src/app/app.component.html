@@ -4,19 +4,19 @@
     <div class="header-inner">
 
       <div class="author">
-        <a href="/"><img class="author-image" src="assets/images/me.png" alt=""></a>
-        <a class="author-link" href="/"><span>Nikita Karavaev</span></a>
+        <a routerLink="/"><img class="author-image" src="assets/images/me.png" alt="me"></a>
+        <a class="author-link" routerLink="/"><span>Nikita Karavaev</span></a>
       </div>
       
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">About</a>
+          <a class="nav-link active" aria-current="page" routerLink="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" routerLink="/projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" routerLink="/contact">Contact</a>
         </li>
         <li class="nav-item">
           <button class="switchButton" (click)="toggleDarkTheme()">💡</button>
@@ -24,8 +24,20 @@
       </ul>
       
     </div>
+    
+    <div class="gif">
+      <div class="container">
+          <img class="gif-image" src="assets/images/giphy.gif" alt="sparkles">
+      </div>
+  </div>
+
+    <h2 class="subtitle">Hi! I'm</h2>
+    <h1 class="title">Nick</h1>
+
+
   </div>
 </header>
+
 
 
 <router-outlet></router-outlet>
